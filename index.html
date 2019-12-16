@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/black.css" />
+    <link rel="stylesheet" href="lib/css/custom.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section><h3>Typescript</h3></section>
+        <section>
+          <p class="heading">Plan</p>
+          <br />
+          <ol>
+            <li>Data types</li>
+            <li>Classes</li>
+            <li>Interfaces</li>
+            <li>Generics</li>
+          </ol>
+        </section>
+        <section>
+          <p class="heading">What is Typescript?</p>
+          <section>
+            <img src="./assets/meme.jpg" alt="" width="500" height="300" />
+          </section>
+          <section>
+            <br />
+            <br />
+            <p class="plain-text">
+              "TypeScript is a typed superset of JavaScript that compiles to
+              plain JavaScript."
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <p class="heading">Data types</p>
+          </section>
+          <section>
+            <p class="subheading">Types declaration</p>
+            <img
+              src="/assets/Data-types/var-declaration.jpg"
+              alt=""
+              width="500"
+              height="250"
+            />
+          </section>
+          <section>
+            <p class="subheading">
+              <span class="type">Boolean</span>, 
+              <span class="type">string</span>, 
+              <span class="type">number</span>,
+              <span class="type">any</span>,
+              <span class="type">void</span>
+          </p>
+            <img src="/assets/Data-types/data-types.jpg" alt="" />
+          </section>
+          <section>
+              <p class="subheading">
+                <span class="type">Null</span>, 
+                <span class="type">undefined</span>, 
+                <span class="type">never</span>
+            </p>
+              <img src="/assets/Data-types/null-undef-never.jpg" alt="" />
+            </section>
+          <section>
+            <p class="subheading"><span class="type">Object</span> and <span class="type">array</span></p>
+            <img src="/assets/Data-types/array-object.jpg" alt="" />
+          </section>
+          <section>
+              <p class="subheading"><span class="type">Tuple</span></p>
+              <img src="/assets/Data-types/tuple.jpg" alt="" />
+          </section>
+          <section>
+              <p class="subheading"><span class="type">Enum</span></p>
+              <img src="/assets/Data-types/enum.jpg" alt="" />
+          </section>
+          <section>
+              <p class="subheading">Type assertions</p>
+              <img src="/assets/Data-types/type-assert.jpg" alt="" />
+          </section>
+          <section>
+            <p class="subheading">Function type</p>
+            <img src="/assets/Data-types/functions.jpg" alt="" />
+        </section>
+        </section>
+        <section>
+          <section>
+            <p class="heading">Class</p>            
+          </section>
+          <section>
+            <p class="heading">Class sample</p>            
+            <img src="./assets/Class/sample.jpg" alt="">
+          </section>    
+          <section>
+            <p class="heading">Class extension</p>            
+            <img src="./assets/Class/Class extendtion.jpg" alt="">
+          </section>
+          <section>
+            <p><span class="type">Private</span>, <span class="type">public</span> and <span class="type">protected</span> modifiers</p>            
+            <img src="./assets/Class/class-modifiers.jpg" alt="">
+          </section>
+          <section>
+            <p class="heading"><span class="type">Readonly</span> modifier</p>            
+            <img src="./assets/Class/readonly.jpg" alt="">
+          </section>                       
+          <section>
+            <p class="heading"><span class="type">Static</span> modifier</p>            
+            <img src="./assets/Class/static.jpg" alt="">
+          </section>        
+          <section>
+            <p class="heading">Abstract class</p>            
+            <img src="./assets/Class/abstract.jpg" alt="">
+          </section>                         
+        </section>
+        <section>
+          <section>
+            <p class="heading">Interface</p>
+          </section>
+          <section>
+            <p class="heading"><span class="type">interface</span> example</p>
+            <img src="assets/Interface/intro.jpg" alt="">
+          </section>
+          <section>
+              <p class="heading"><span class="type">interface</span> usage</p>
+              <img src="assets/Interface/interface.jpg" alt="">
+          </section>
+          <section>
+              <p class="heading">Optional parameters</span></p>
+              <div class="two-imgs">
+                  <img src="assets/Interface/reservable.jpg" alt="" width="400" height="360">
+                  <img src="assets/Interface/costable.jpg" alt="" width="400" height="360">
+              </div>
+          </section>
+          <section>
+              <p class="heading">Readonly properties</span></p>
+              <div class="two-imgs">
+                  <img src="assets/Interface/readonly-prop.jpg" alt="" width="400" height="220">
+                  <img src="assets/Interface/readonly-arraz.jpg" alt="" width="400" height="220">
+              </div>
+          </section>
+          <section>
+              <p class="heading">Interfaces with classes</span></p>
+              <img src="assets/Interface/Class.jpg" alt="">
+          </section>
+          <section>
+            <p class="heading">Interface as a parameter</span></p>
+            <img src="assets/Interface/Interface as parameter.jpg" alt="">
+          </section>
+        </section>
+        <section>
+          <section>
+            <p class="heading">Generics</p>
+          </section>
+          <section>
+            <p class="heading">Generic function</p>
+            <img src="./assets/Generics/sample.jpg" alt="">
+          </section>
+          <section>
+            <p class="heading">Generic interface</p>
+            <img src="./assets/Generics/interface.jpg" alt="">
+          </section>
+          <section>
+            <p class="heading">Generic constrains</p>
+            <img src="./assets/Generics/constrains.jpg" alt="">
+          </section>
+        </section>
+        <section>
+          <section>
+            <p>More features of Typescrypt</p>
+            <ul>
+              <li>Advanced types</li>
+              <li>Iterator and generators</li>
+              <li>Decorators</li>
+              <li>Mixins</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <p class="heading">Thanks for watching!</p>
+        </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: "plugin/markdown/marked.js" },
+          { src: "plugin/markdown/markdown.js" },
+          { src: "plugin/notes/notes.js", async: true },
+          { src: "plugin/highlight/highlight.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
