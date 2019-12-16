@@ -1,0 +1,24 @@
+.heading {
+  font-size: 60px;
+}
+
+.subheading {
+  font-size: 48px;
+}
+
+.plain-text {
+  font-size: 42px;
+}
+
+.reveal section img {
+  border: none;
+}
+
+.type {
+  color: #5191c5;
+}
+
+.two-imgs {
+  display: flex;
+  justify-content: space-between;
+}
